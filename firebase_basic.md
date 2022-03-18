@@ -81,6 +81,7 @@ export default Dashboard
 
 ```
 
+GoalForm.js
 ```js
 import { useEffect, useState } from 'react'
 import { db } from '../firebase/config'
@@ -97,7 +98,6 @@ function GoalForm() {
     const onSubmit = async (e) => {
         e.preventDefault()
         if (!name || !author) {
-            // setError(true)
             setError('Please Provide all field')
             return
         }
